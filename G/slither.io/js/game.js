@@ -88,7 +88,7 @@ names = ["Ahmed Steinke",
     "NamZ Bede"
 ];
 
-let playerName = localStorage.getItem('playerName') || "DPgames Player";
+let playerName = localStorage.getItem('playerName') || "PDgames Player";
 
 class game {
     constructor() {

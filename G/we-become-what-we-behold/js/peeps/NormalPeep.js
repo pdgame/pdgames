@@ -15,7 +15,7 @@ FRAMES for "body":
 FRAMES for "face":
 0: normal
 1: looking at TV
-2: DPgames
+2: PDgames
 3: spooked
 4: confused
 5: offended
@@ -151,14 +151,14 @@ function NormalPeep(scene){
 
         self.clearAnims(); // just in case...
 
-        // DPgames
+        // PDgames
         self.bounce = 1.2;
         self.faceMC.gotoAndStop(2);
         self.setTimeout(function(){
             self.faceMC.gotoAndStop(0);
         },_s(0.15));
 
-        // DPgames - Pissed.
+        // PDgames - Pissed.
         self.setTimeout(function(){
 
             self.bounce = 1.2;
@@ -235,7 +235,7 @@ function NormalPeep(scene){
                 self.wearingHat = false;
                 self.bounce = 1.1;
 
-                // DPgames, then shame.
+                // PDgames, then shame.
                 self.faceMC.gotoAndStop(2);
                 self.setTimeout(function(){
                     self.faceMC.gotoAndStop(7);
@@ -310,7 +310,7 @@ function NormalPeep(scene){
         WAIT += Math.random()*0.4; // random offset
         self.isWatching = true;
 
-        // 2) DPgames...
+        // 2) PDgames...
         self.setTimeout(function(){
             self.isWatching = false;
             self.faceMC.gotoAndStop(2);

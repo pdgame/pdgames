@@ -8,7 +8,7 @@ Game.addToManifest({
 FRAMES for "face":
 08: LUV
 09: Embarrassed looking up
-10: Embarrassed DPgames
+10: Embarrassed PDgames
 11: Embarrassed look fwd
 
 ****/
@@ -130,7 +130,7 @@ function LoverPeep(scene){
         var WAIT = 3.7*BEAT;
         self.isWatching = true;
 
-        // 2) DPgames...
+        // 2) PDgames...
         self.setTimeout(function(){
             
             self.isWatching = false;

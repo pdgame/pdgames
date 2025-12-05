@@ -3,31 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us | Microbuzz Tech</title>
   
-  <!-- ✅ SEO Meta -->
-  <meta name="description" content="Learn more about Microbuzz Tech, our mission, vision, and dedication to delivering fun and secure online gaming experiences."/>
-  <meta name="keywords" content="about Microbuzz Tech, company info, gaming company, online games"/>
-  <meta property="og:title" content="About Us | Microbuzz Tech"/>
-  <meta property="og:description" content="Discover Microbuzz Tech's mission, vision, and the story behind our free online games platform."/>
+  <!-- SEO Meta Tags -->
+  <title>About Us | PDgames - Our Story & Mission</title>
+  <meta name="description" content="Learn about PDgames, our mission to provide the best free online gaming experience, and our commitment to gamers worldwide. Discover our story!"/>
+  <meta name="keywords" content="about PDgames, gaming company, free online games, our mission, gaming platform story"/>
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Us | PDgames"/>
+  <meta property="og:description" content="Discover PDgames's mission, vision, and the story behind our free online games platform."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:image" content="https://yourcdn.com/about-preview.jpg"/>
-  <link rel="icon" href="favicon.png" type="image/png">
+  <meta property="og:url" content="https://pdgame.github.io/pdgames/about.html"/>
+  <meta property="og:image" content="https://pdgame.github.io/pdgames/assets/logo.png"/>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://pdgame.github.io/pdgames/about.html">
 
   <!-- Fonts + CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css">
+  
+  <style>
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .stat-card {
+      background: rgba(28, 28, 48, 0.6);
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      border-radius: 20px;
+      border: 2px solid rgba(108, 92, 231, 0.3);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    
+    .stat-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary);
+      box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+    }
+    
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 800;
+      background: var(--gradient-gaming);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin: 1rem 0;
+    }
+    
+    .stat-label {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    
+    .value-box {
+      background: rgba(108, 92, 231, 0.1);
+      padding: 1.5rem;
+      border-radius: 15px;
+      margin: 1rem 0;
+      border-left: 4px solid var(--primary);
+    }
+    
+    .value-box h3 {
+      color: var(--primary);
+      margin-bottom: 0.8rem;
+      font-size: 1.2rem;
+    }
+  </style>
 </head>
 <body>
 
   <!-- ================= HEADER ================= -->
   <header>
     <div class="brand">
-      <div class="company-logo"></div>
-      <h1 class="company-name"></h1>
+      <!-- <div class="company-logo"></div> -->
+      <h1 class="company-name">PDgames</h1>
     </div>
 
-    <!-- Home link -->
     <div class="home-link-wrapper">
       <a href="index.html" class="home-link">
         <span class="home-text">Home</span>
@@ -36,64 +102,185 @@
     </div>
   </header>
 
-
   <!-- ================= HERO ================= -->
-  <section class="hero home-bg">
+  <section class="hero home-bg" role="banner">
     <div class="hero-content">
-      <h2>About Us</h2>
-      <p class="hero-desc">Get to know <span class="company-name"></span>, our story, and what drives us.</p>
+      <h1>About PDgames</h1>
+      <p class="hero-desc">🎮 Your Gateway to Unlimited Free Gaming!</p>
     </div>
   </section>
 
   <!-- ================= ABOUT CONTENT ================= -->
-  <main>
-    <section id="about" class="policy-container">
+  <main role="main">
+    <section class="policy-container">
       <div class="policy-inner">
-        <h1>Who We Are</h1>
-        <p><span class="company-name"></span> is dedicated to building exciting, engaging, and secure online games for players worldwide. 
-        We believe gaming should be fun, safe, and accessible for everyone.</p>
+        
+        <h2>Who We Are</h2>
+        <p><strong>PDgames</strong> is a premier destination for free online gaming, dedicated to bringing you the best browser-based games from around the world. We're gamers at heart who believe that everyone deserves access to quality entertainment—no downloads, no subscriptions, no barriers.</p>
+        
+        <p>Whether you're a casual player looking for a quick break or a dedicated gamer seeking your next challenge, PDgames offers a diverse library of games spanning action, puzzle, racing, arcade, strategy, and more.</p>
+
+        <!-- Stats Section -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">1000+</div>
+            <div class="stat-label">Free Games</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Available</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Free to Play</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Hours of Fun</div>
+          </div>
+        </div>
 
         <h2>Our Mission</h2>
-        <p>To deliver top-quality online gaming experiences that bring people together, spark creativity, and provide hours of fun—all while keeping your privacy and security in mind.</p>
-
-        <h2>Our Vision</h2>
-        <p>We aim to become a global leader in online gaming, known for our innovative approach, strong community, and commitment to ethical digital entertainment.</p>
-
-        <h2>Our Values</h2>
+        <p>To democratize gaming by providing a <strong>free, accessible, and enjoyable</strong> gaming platform for players of all ages and skill levels. We strive to:</p>
         <ul>
-          <li><strong>Innovation:</strong> Always pushing creative boundaries.</li>
-          <li><strong>Community:</strong> Building inclusive spaces where players feel at home.</li>
-          <li><strong>Trust:</strong> Protecting user privacy and security.</li>
-          <li><strong>Fun:</strong> Making sure enjoyment is at the core of everything we create.</li>
+          <li>✨ Curate the best collection of browser-based games</li>
+          <li>🚀 Deliver seamless gaming experiences on any device</li>
+          <li>🔒 Protect user privacy and ensure a safe gaming environment</li>
+          <li>🌍 Build a vibrant, inclusive gaming community</li>
+          <li>💡 Continuously innovate and improve our platform</li>
         </ul>
 
+        <h2>Our Vision</h2>
+        <p>We envision a world where gaming is <strong>universally accessible</strong>—where anyone with an internet connection can experience the joy, excitement, and challenge of great games. PDgames aims to be the go-to platform for:</p>
+        <ul>
+          <li>Students looking for a quick study break</li>
+          <li>Professionals seeking stress relief during lunch</li>
+          <li>Families wanting quality time together</li>
+          <li>Gamers everywhere who love discovering new experiences</li>
+        </ul>
+
+        <h2>Our Values</h2>
+        
+        <div class="value-box">
+          <h3>🎯 Player-First Approach</h3>
+          <p>Every decision we make starts with one question: "Is this good for our players?" Your experience, enjoyment, and feedback drive everything we do.</p>
+        </div>
+
+        <div class="value-box">
+          <h3>🌟 Quality Over Quantity</h3>
+          <p>While we offer thousands of games, each one is carefully selected. We prioritize fun, engaging gameplay and reject low-quality or inappropriate content.</p>
+        </div>
+
+        <div class="value-box">
+          <h3>🔒 Privacy & Security</h3>
+          <p>Your trust is sacred. We implement robust security measures and transparent privacy practices. We never sell your data, and we minimize data collection to only what's essential.</p>
+        </div>
+
+        <div class="value-box">
+          <h3>🤝 Community & Inclusivity</h3>
+          <p>Gaming brings people together. We foster a welcoming environment where players of all backgrounds, skill levels, and ages feel valued and respected.</p>
+        </div>
+
+        <div class="value-box">
+          <h3>💚 Sustainability & Ethics</h3>
+          <p>We're committed to ethical business practices, sustainable operations, and giving back to the gaming community that has given us so much.</p>
+        </div>
+
+        <div class="value-box">
+          <h3>🚀 Innovation & Excellence</h3>
+          <p>The gaming landscape evolves rapidly, and so do we. We embrace new technologies, listen to feedback, and constantly improve our platform.</p>
+        </div>
+
         <h2>Our Journey</h2>
-        <p>Founded with a passion for gaming, <span class="company-name"></span> started as a small team of enthusiasts and has grown into a trusted name in the gaming industry. 
-        Today, we continue to expand our reach, bringing joy to gamers across the globe.</p>
+        <p>PDgames was born from a simple idea: <strong>great games should be free and accessible to everyone.</strong></p>
+        
+        <p>What started as a small project has grown into a thriving platform hosting thousands of games and serving players worldwide. Along the way, we've:</p>
+        <ul>
+          <li>🎮 Partnered with talented game developers across the globe</li>
+          <li>📱 Optimized our platform for mobile and desktop gaming</li>
+          <li>🌐 Expanded our game library to include diverse genres and styles</li>
+          <li>💬 Built an engaged community of passionate gamers</li>
+          <li>🛠️ Continuously improved our user experience based on feedback</li>
+        </ul>
+
+        <p>But we're just getting started. As we look to the future, we're excited to bring you even more games, features, and innovations that enhance your gaming experience.</p>
+
+        <h2>What Makes Us Different</h2>
+        <div style="background: rgba(255, 107, 53, 0.1); padding: 2rem; border-radius: 20px; border: 2px solid rgba(255, 107, 53, 0.3); margin: 2rem 0;">
+          <ul style="margin: 0;">
+            <li><strong>No Downloads Required:</strong> Play instantly in your browser—no installations, no waiting.</li>
+            <li><strong>No Sign-Up Needed:</strong> Jump straight into the action. Most games require zero registration.</li>
+            <li><strong>Ad-Light Experience:</strong> We keep ads minimal and non-intrusive so you can focus on gaming.</li>
+            <li><strong>Cross-Platform Compatible:</strong> Enjoy games on desktop, mobile, or tablet—seamlessly.</li>
+            <li><strong>Regular Updates:</strong> New games added constantly to keep things fresh.</li>
+            <li><strong>Curated Collections:</strong> Browse by genre, popularity, or trending games.</li>
+            <li><strong>Safe & Secure:</strong> Family-friendly content with strong privacy protections.</li>
+          </ul>
+        </div>
+
+        <h2>Our Commitment to You</h2>
+        <p>When you choose PDgames, you can count on:</p>
+        <ul>
+          <li>✅ <strong>100% Free Games</strong> - No hidden costs, ever</li>
+          <li>✅ <strong>Fast Loading Times</strong> - Optimized for quick access</li>
+          <li>✅ <strong>Mobile-Friendly</strong> - Play anywhere, anytime</li>
+          <li>✅ <strong>Safe Content</strong> - Appropriate for all ages</li>
+          <li>✅ <strong>Privacy Protection</strong> - Your data is safe with us</li>
+          <li>✅ <strong>Responsive Support</strong> - We're here to help</li>
+          <li>✅ <strong>Constant Innovation</strong> - Always improving</li>
+        </ul>
+
+        <h2>Join Our Community</h2>
+        <p>PDgames isn't just a website—it's a community of gamers who share a passion for fun, challenge, and discovery. We invite you to:</p>
+        <ul>
+          <li>🎮 Explore our vast game library</li>
+          <li>💬 Share feedback and game requests</li>
+          <li>📱 Follow us on social media for updates</li>
+          <li>🤝 Recommend PDgames to friends and family</li>
+          <li>⭐ Help us grow by spreading the word</li>
+        </ul>
+
+        <div style="background: var(--gradient-gaming); padding: 3rem 2rem; border-radius: 25px; text-align: center; margin: 3rem 0; color: #fff;">
+          <h2 style="color: #fff; margin-bottom: 1rem; font-size: 2rem;">Ready to Play?</h2>
+          <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9);">Thousands of games are waiting for you!</p>
+          <a href="index.html" style="display: inline-block; padding: 1.2rem 3rem; background: #fff; color: var(--bg-dark); font-weight: 800; border-radius: 50px; text-decoration: none; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; transition: transform 0.3s ease; box-shadow: 0 5px 20px rgba(0,0,0,0.3);">
+            Start Playing Now
+          </a>
+        </div>
+
+        <h2>Contact Us</h2>
+        <p>Have questions, suggestions, or feedback? We'd love to hear from you!</p>
+        <p>📧 Email: <a href="mailto:support@pdgames.com">support@pdgames.com</a><br>
+        💬 Visit our <a href="contact.html">Contact Page</a><br>
+        🐦 Follow us on <a href="https://twitter.com/playgamesPDgames" target="_blank" rel="noopener">Twitter</a><br>
+        📸 Follow us on <a href="https://instagram.com/PDgames.games" target="_blank" rel="noopener">Instagram</a></p>
+
+        <hr style="margin: 3rem 0; border: none; border-top: 1px solid rgba(108, 92, 231, 0.2);">
+
+        <p style="text-align: center; color: var(--text-muted); font-size: 1.1rem;">
+          <strong>PDgames</strong> - Where Gaming Meets Freedom 🎮<br>
+          <em>Play Free. Play Anywhere. Play PDgames.</em>
+        </p>
       </div>
     </section>
   </main>
 
-
   <!-- ================= FOOTER ================= -->
   <footer class="site-footer">
     <div class="footer-container">
-      <!-- Left -->
       <div class="footer-left">
         <div class="brand">
-          <div class="company-logo"></div>
-          <h2 class="company-name"></h2>
+          <!-- <div class="company-logo"></div> -->
+          <h2 class="company-name">PDgames</h2>
         </div>
-        <p class="dev-company">Developed by <span class="company-owner"></span></p>
+        <p class="dev-company">Developed by <span class="company-owner">PDgames</span></p>
         <div class="footer-socials" id="footer-socials"></div>
       </div>
 
-      <!-- Right -->
       <div class="footer-right">
         <div class="footer-column">
           <h4>Get To Know Us</h4>
           <a href="about.html">About</a>
-          <!-- <a href="#"><span class="company-name"></span> for Developers</a> -->
         </div>
         <div class="footer-column">
           <h4>Privacy and Terms</h4>
@@ -101,14 +288,13 @@
         </div>
         <div class="footer-column">
           <h4>Help and Support</h4>
-          <!-- <a href="/faq.html">FAQ</a> -->
-          <a href="contact.html">Contact US</a>
+          <a href="contact.html">Contact Us</a>
         </div>
       </div>
     </div>
     <p class="footer-bottom">
-      &copy; <span id="year"></span> <span class="website-name"></span>. All rights reserved. <br>
-      Powered by <strong><span class="company-owner"></span></strong>
+      &copy; <span id="year"></span> <span class="website-name">PDgames</span>. All rights reserved. <br>
+      Powered by <strong><span class="company-owner">PDgames</span></strong>
     </p>
   </footer>
 

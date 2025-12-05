@@ -43,7 +43,7 @@ function SnobbyPeep(scene){
     var doubles = 0;
     var MODE = -1;
     var MODE_STARE = 0;
-    var MODE_DPgames = 1;
+    var MODE_PDgames = 1;
     var MODE_SMUG = 2;
     var MODE_HMPH = 3;
     var MODE_POP = 4;
@@ -52,7 +52,7 @@ function SnobbyPeep(scene){
 
     // HACK
     self.HACK_JUMPSTART = function(){
-        MODE = MODE_DPgames;
+        MODE = MODE_PDgames;
     };
 
     self.callbacks.update = function(){
@@ -74,7 +74,7 @@ function SnobbyPeep(scene){
                 case MODE_STARE:
                     if(frame<3) face.gotoAndStop(frame+1);
                     break;
-                case MODE_DPgames:
+                case MODE_PDgames:
                     if(frame<7) face.gotoAndStop(frame+1);
                     break;
                 case MODE_SMUG:
@@ -106,7 +106,7 @@ function SnobbyPeep(scene){
 
                         // Loop back
                         face.gotoAndStop(7);
-                        MODE = MODE_DPgames;
+                        MODE = MODE_PDgames;
                         self.isSmug = false;
                         
                     }
@@ -208,10 +208,10 @@ function SnobbyPeep(scene){
 
         },_s(OFFSET+BEAT*2));
 
-        // 2) DPgames...
+        // 2) PDgames...
         self.setTimeout(function(){
             self.bounce = 1.3;
-            MODE = MODE_DPgames;
+            MODE = MODE_PDgames;
         },_s(OFFSET+WAIT));
 
         // 3) And go on.

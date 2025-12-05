@@ -17,7 +17,7 @@ Game.addToManifest({
 
 FACE FRAMES:
 00-04: crazy at screen (loop)
-05-13: DPgames, and crazy forever (loop: 09-13)
+05-13: PDgames, and crazy forever (loop: 09-13)
 
 WEAPON FRAMES:
 00-05: pull out (04 is rest)

@@ -18,10 +18,10 @@
 
     <form id="setupForm">
       <label for="player1">Player 1 Name</label>
-      <input type="text" id="player1" placeholder="DPgames Player 1" required>
+      <input type="text" id="player1" placeholder="PDgames Player 1" required>
 
       <label for="player2">Player 2 Name</label>
-      <input type="text" id="player2" placeholder="DPgames Player 2" required>
+      <input type="text" id="player2" placeholder="PDgames Player 2" required>
 
       <label for="mode">Mode</label>
       <select id="mode" required>
@@ -60,7 +60,7 @@
   // auto-set Player 2 field if Player vs AI is selected
   modeSel.addEventListener("change", () => {
     if (modeSel.value === "pva") {
-      player2Input.value = "DPgames AI";
+      player2Input.value = "PDgames AI";
       player2Input.disabled = true;   // 🔥 disable editing
     } else {
       player2Input.value = "";

@@ -4,7 +4,7 @@
 
 const GAME_DATA = {
   title: "Eggy Car",
-  developer: "DPgames",
+  developer: "PDgames",
   rating: "⭐ 4.2",
   ageRating: "Rated for 3+",
   plays: "10K+ Plays",
