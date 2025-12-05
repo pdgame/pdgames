@@ -1,6 +1,6 @@
 :root {
-  --primary: #00ffcc;
-  --accent: #ff007f;
+  --primary: #4dffe1;
+  --accent: #ff7be2;
   --bg-dark: #0d0d0d;
   --bg-card: #171717;
   --text-light: #f5f5f5;
@@ -112,9 +112,9 @@ header h1 {
 
 /* Hero */
 .hero {
-  padding: 4rem 1rem 2rem;
+  padding: 10rem 1rem 2rem;
   background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.85)),
-    url('https://wallpapercave.com/wp/wp5723002.jpg') center/cover no-repeat;
+    url('https://wallpapercave.com/uwp/uwp4616796.jpeg') center/cover no-repeat;
   text-align: center;
 }
 .hero-content h2 {
